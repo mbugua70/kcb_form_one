@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>KCB</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- <link rel="stylesheet" href="css/index_v2.css"> -->
+
+</head>
+<body>
+
+ <div class="main_body">
+  <div class="row parcel_form">
+
+<form id="data_form">
+
+
+
+        <div class="input-field col s12">
+          <span>1. What is your name</span><br>
+            <input id="sub_1_1" name="sub_1_1" placeholder="Enter your name" type="text">
+        </div>
+        <div class="input-field col s12">
+          <span>2. What is your golf handicap</span><br>
+          <select
+          name="sub_1_2"
+          id="sub_1_2"
+          style="display: block;"
+          class="select_els"
+        >
+          <option value="">Select your answer</option>
+          <option id="" value="0-10">
+            0-10
+          </option>
+          <option id="" value="11-20">
+            11-20
+          </option>
+          <option id="" value="21-30">
+           21-30
+          </option>
+          <option id="" value="Above 30">
+           Above 30
+          </option>
+        </select>
+        </div>
+
+
+        <div class="input-field col s12">
+          <span>3. Which is your home club</span><br>
+          <input id="sub_1_3" name="sub_1_3" placeholder="Enter your answer" type="text">
+        </div>
+
+        <div class="input-field col s12">
+          <span>4. Would you like to receive updates on future KCB Golf events via email or SMS</span><br>
+          <select
+          name="sub_1_4"
+          id="sub_1_4"
+          style="display: block;"
+          class="select_els"
+        >
+          <option value="">Select your answer</option>
+          <option id="email" value="email">
+            Email
+          </option>
+          <option id="sms" value="sms">
+            SMS
+          </option>
+
+        </select>
+        </div>
+
+        <div class="input-field col s12" id="hide_container_one" style="display: none;">
+          <span>Email</span><br>
+            <input id="sub_1_5" name="sub_1_5" placeholder="Enter your email" type="email">
+        </div>
+
+        <div class="input-field col s12" id="hide_container_two" style="display: none;">
+          <span>Phone</span><br>
+            <input id="sub_1_6" name="sub_1_6" placeholder="Enter phone number" type="tel">
+        </div>
+
+           <div class="input-field col s12 center_it">
+        <button id="branding_btn" class="btn-large  margin-bottom waves-effect waves-light pick_color">  SUBMIT <i class="fa fa-send"></i></button>
+      </div>
+
+</form>
+
+
+
+
+
+
+  </div>
+
+ </div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/localforage.min.js"></script>
+<script type="text/javascript" src="js/sweet.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="js/sweet2.js"></script>
+
+<script type="text/javascript" src="util/api.js"></script>
+
+ <!-- <script type="text/javascript" src="js/index.js"></script> -->
+<!-- <script type="text/javascript" src="js/location.js"></script> -->
+
+</body>
+</html>
