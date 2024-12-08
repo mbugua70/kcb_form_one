@@ -140,11 +140,12 @@ form.addEventListener(
           })
             .then((res) => res.json())
             .then((data) => {
-              if (!data.error) {
+
+              if (data.response === "success") {
                 workingNotifier("You have registered successfully!");
-                setTimeout(() => {
-                  window.location.reload();
-                }, 3000);
+                // setTimeout(() => {
+                //   window.location.reload();
+                // }, 3000);
                 shouldProceed = false;
               } else {
               }
